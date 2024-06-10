@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Exo 2';
+}
+
+section {
+  height: 100vh;
+}
+
+.container-parent {
+  height: 200vh;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%),linear-gradient(60deg, #0554f2 47.14%, #0c9ccc 92.24%);
+}
+
+.sticky {
+  overflow: hidden;
+  position: sticky;
+  top: 0; /* margem do topo */
+  height: 100vh;
+  padding-left: 6rem;
+
+}
+
+.scroll-section {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 200vw;
+  will-change: transform;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.card {
+  width: 16em;
+  height: 350px;
+  margin: 0.2em;
+  border-radius: 10px;
+  background: #efefef;
+  display: inline-flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card img{
+  width: 60%;
+
+}
+
+.fundo1{
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  top: 45%;
+}
+
+.fundo2{
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  top: 0;
+}
+
+.fundo3{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.sticky h1{
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 2rem;
+}
